@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>闪星方块 网页内容</title>
+    <link rel="stylesheet" href="https://pinkcandy.top/css/SSB_white.css">
+    <link rel="icon" href="https://pinkcandy.top/resource/img/logoICO.ico" type="img/x-icon">
+</head>
+<body>
+    <!-- PINKCANDY -->
+    <div id="menuFull">
+        <span>闪星方块 网页内容</span>
+    </div>
+    <div class="screenFull">
+        <div class="userBox">
+            <div class="leftSide">
+                <div class="infoBox">
+                    <h1>网页内容</h1>
+                    <h2>屏幕</h2>
+                    <p>
+                        screenFull 标准屏幕<br>
+                        screen 屏幕<br>
+                    </p>
+                    <h2>文本</h2>
+                    <p>
+                        infoBox 信息盒子<br>
+                        -- 显示基础的网页信息，搭配h1 h2 p使用。<br>
+                        txtBox 文本盒子<br>
+                        -- 用于显示文本 搭配h1 h2 p pre使用。<br>
+                        boardBox 文本盒子容器<br>
+                        -- 显示多组文本的区域，搭配txtBox使用。<br>
+                    </p>
+                    <h2>媒体</h2>
+                    <p>
+                        galleryBox 画廊盒子容器<br>
+                        -- 展示多个媒体的区域，需要展示的媒体内容统一放到这里。<br>
+                        showGalleryIndex 画廊盒子<br>
+                        -- 在画廊盒子容器中的媒体，搭配h1 h2 p img 使用。<br>
+                        showGallery 画廊大盒子<br>
+                        -- 在网页中展示单个媒体。<br>
+                        ---- firstSide 媒体放置区，如图片、视频等<br>
+                        ---- secondSide 信息说明区<br>
+                        -------- txtBox<br>
+                        ------------ information 在此处可以显示有字段编排的文本<br>
+                        previewGallery 预览画廊盒子<br>
+                        -- 媒体预览的小框<br>
+                        ---- galleryTitle 在小框中心显示一段文本<br>
+                        ---- imgBox 媒体需放置在此处<br>
+                        showPic 图片展示盒子<br>
+                    </p>
+                    <h2>交互</h2>
+                    <p>
+                        formBox 表单盒子<br>
+                        -- 用户输入的区域。<br>
+                        ---- side 可以分成左右两块<br>
+                        userBox 用户盒子<br>
+                        -- 网站用户的显示区域<br>
+                        ---- leftSide 左空间，搭配galleryBox使用。<br>
+                        ---- right 右空间<br>
+                        -------- essayBox 爪记盒子<br>
+                        ---------- 此处可以展示用户的动态信息，搭配h1 h2 p使用。<br>
+                        userBoxIndex 首页用户盒子<br>
+                        -- 在首页显示登录用户信息<br>
+                        operateBox 操作盒子<br>
+                        -- 用户使用网站功能的区域<br>
+                        ---- information 描述功能<br>
+                        ---- contentBox 操作内容盒子<br>
+                        ------ 聚焦到此处时contentBox将自动展开。<br>
+                        statementBox 信息报告盒子<br>
+                        -- 显示一段通知，提示或警告。<br>
+                        commentsBox 评论盒子<br>
+                        -- 显示用户的评论信息，搭配h1 h2 p使用。<br>
+                    </p>
+                </div>
+            </div>
+            <div class="rightSide">
+                <div class="essayBox">
+                    <h1>例1 粉糖粒子登录页</h1>
+                    <a href="https://pinkcandy.top/login.php">看看效果</a>
+                    <p> 
+                        &lt;div class="screenFull">
+                            &lt;div class="formBox">
+                                &lt;div class="side">
+                                    &lt;img src="./resource/svg/welcome.svg" alt="welcome" width="100%">
+                                &lt;/div>
+                                &lt;div class="side">
+                                    &lt;div class="operateBox">
+                                        &lt;div class="contentBox">
+                                            &lt;div class="information">
+                                                其它选项
+                                            &lt;/div>
+                                            &lt;p>注册粉糖账号&lt;/p>
+                                            &lt;a href="./register.php">&lt;button>注册&lt;/button>&lt;/a>
+                                            &lt;p>忘记密码&lt;/p>
+                                            &lt;div class="formBox">
+                                                &lt;form action="./running/enter.php" method="post">
+                                                    &lt;p>邮箱&lt;/p>
+                                                    &lt;input type="text" name="email" placeholder="输入邮箱获取验证码">
+                                                    &lt;input type="hidden" name="todo" value="4">
+                                                    &lt;button type="submit">获取&lt;/button>
+                                                &lt;/form>
+                                                &lt;form action="./running/enter.php" method="post">
+                                                    &lt;p>重新设置密码&lt;/p>
+                                                    &lt;input type="text" name="password" placeholder="重新设置密码">
+                                                    &lt;p>验证码&lt;/p>
+                                                    &lt;input type="text" name="resetCode" placeholder="验证码">
+                                                    &lt;input type="hidden" name="todo" value="5">
+                                                    &lt;button type="submit">重置&lt;/button>
+                                                &lt;/form>
+                                            &lt;/div>    
+                                        &lt;/div>
+                                    &lt;/div>
+                                    &lt;form action="./running/enter.php" method="post">
+                                        &lt;p>小兽&lt;/p>
+                                        &lt;input type="text" name="username" placeholder="粉糖账号/邮箱" id="username">
+                                        &lt;p>密码&lt;/p>
+                                        &lt;input type="password" name="password" placeholder="密码" id="password">
+                                        &lt;input type="hidden" name="todo" value="2">
+                                        &lt;button type="submit">登录&lt;/button>
+                                    &lt;/form>
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
+                    </p>
+                </div>
+                <div class="essayBox">
+                    <h1>例2 用户空间页</h1>
+                    <a href="https://pinkcandy.top/user.php?username=10000">看看效果</a>
+                    <p>
+                        &lt;div class="screen">
+                            &lt;div class="operateBox">
+                                &lt;div class="contentBox">
+                                    &lt;div class="information">
+                                        PINKCANDY
+                                    &lt;/div>
+                                    &lt;div class="formBox">
+                                        &lt;div class="side">
+                                            画廊
+                                            &lt;form action="editGallery.php" method="post">
+                                                &lt;input type="text" name="galleryId" placeholder="画廊ID">
+                                                &lt;button type="submit">编辑画廊&lt;/button>
+                                            &lt;/form>
+                                            粉糖账号
+                                            &lt;form action="./running/enter.php" method="post" id="logout">
+                                                &lt;input type="hidden" name="todo" value="3">
+                                                &lt;button type="submit">注销&lt;/button>
+                                            &lt;/form>
+                                            &lt;span id="edit">&lt;/span>
+                                            &lt;a href="./editOther.php">编辑其它&lt;/a>
+                                        &lt;/div>
+                                        &lt;div class="side">
+                                            爪记
+                                            &lt;div class="formBox">
+                                                &lt;form action="./running/upload.php" method="post">
+                                                    &lt;input type="text" name="title" placeholder="爪记标题">&lt;br>
+                                                    &lt;textarea name="content" cols="30" rows="10" placeholder="爪记内容......">&lt;/textarea>&lt;br>
+                                                    &lt;input type="text" name="galleryId" placeholder="附图（输入画廊ID）">
+                                                    &lt;input type="hidden" name="todo" value="2">
+                                                    &lt;button type="submit">发布爪记&lt;/button>
+                                                &lt;/form>
+                                                &lt;form action="./running/delete.php" method="post">
+                                                    &lt;input type="text" name="essayId" placeholder="爪记ID">
+                                                    &lt;input type="hidden" name="todo" value="6">
+                                                    &lt;button type="submit">删除爪记&lt;/button>
+                                                &lt;/form>
+                                            &lt;/div>
+                                        &lt;/div>
+                                    &lt;/div>        
+                                &lt;/div>
+                            &lt;/div>
+                            &lt;div class="infoBox">
+                                &lt;h1>&lt;span id="name">&lt;/span>&lt;/h1>
+                                &lt;h2>&lt;span id="more">&lt;/span>&lt;/h2>
+                                &lt;p>&lt;span id="info">&lt;/span>&lt;/p>
+                                &lt;p>&lt;span id="watch">&lt;/span>&lt;/p>
+                            &lt;/div>
+                            &lt;span id="userBox">&lt;/span>
+                        &lt;/div>
+                    </p>
+                </div>
+                <div class="essayBox">
+                    <h1>例3 画廊展示页</h1>
+                    <a href="https://pinkcandy.top/gallery.php?galleryId=1">看看效果</a>
+                    <p>
+                        &lt;div class="screenFull">
+                            &lt;div class="showGallery">
+                                &lt;div class="firstSide">
+                                    &lt;span id="img">&lt;/span>
+                                &lt;/div>
+                                &lt;div class="secondSide">
+                                    &lt;div class="txtBox">
+                                        &lt;h1>&lt;span id="title">&lt;/span>&lt;/h1>
+                                        &lt;h2>&lt;span id="name">&lt;/span>&lt;span id="a">&lt;/span>&lt;/h2>
+                                        &lt;p>&lt;span id="time">&lt;/span>&lt;/p>
+                                        &lt;p>&lt;pre>&lt;span id="info">&lt;/span>&lt;/pre>&lt;/p>
+                                        &lt;h2>&lt;span id="outType">&lt;/span>&lt;/h2>
+                                        &lt;h2>&lt;span id="allTags">&lt;/span>&lt;/h2>
+                                        &lt;div class="formBox">
+                                            &lt;button>画廊ID&lt;span id="galleryId">&lt;/span>&lt;/button>
+                                            &lt;button>收藏&lt;span id="starNum">&lt;/span>&lt;/button>    
+                                            &lt;form action='./running/mark.php' method='post'>
+                                                &lt;span id="galleryIdFirst">&lt;/span>
+                                                &lt;input type='hidden' name='todo' value='1'>
+                                                &lt;button type='submit'>收藏&lt;/button>
+                                            &lt;/form>
+                                        &lt;/div>
+                                    &lt;/div>
+                                    &lt;div class="txtBox">
+                                        &lt;h2>发表评论&lt;/h2>
+                                        &lt;div class="formBox">
+                                            &lt;form action="./running/send.php" method="post">
+                                                &lt;input type="text" name="comment" placeholder="评论">
+                                                &lt;input type="hidden" name="todo" value="2">
+                                                &lt;span id="galleryIdSecond">&lt;/span>
+                                                &lt;button type="submit">发送&lt;/button>
+                                            &lt;/form>
+                                        &lt;/div>
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
